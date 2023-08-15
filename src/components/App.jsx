@@ -8,15 +8,7 @@ import css from './app.module.css';
 class App extends Component {
   state = {
     contacts: [],
-    name: '',
-    number: '',
     filter: '',
-  };
-
-  handleInputChange = event => {
-    this.setState({
-      [event.currentTarget.name]: event.currentTarget.value,
-    });
   };
 
   handleFilter = e => {
